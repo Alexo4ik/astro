@@ -140,12 +140,11 @@ body {
 }
 
 .content {
+	position: relative;
 	will-change: transform;
 }
 
-
-@media (min-width: 375px) {
-	.copy {
+.copy {
 	display: flex;
 	flex-direction: column;
 	position: sticky;
@@ -155,29 +154,9 @@ body {
 	overflow: hidden;
 	max-width: fit-content;
 	max-height: fit-content;
-	
 }
 i:hover {
 	text-shadow: 0 0 10px white;
-}
-}
-
-@media (max-width: 375px) {
-	.copy {
-		display: flex;
-		flex-direction: column;
-		position: sticky;
-		top: 400px;
-		left: 10px;
-		z-index: 2;
-		overflow: hidden;
-		font-size: 50%;
-		max-width: fit-content;
-		max-height: fit-content;
-}
-i:hover {
-	text-shadow: 0 0 10px white;
-}
 }
 
 .btn {
@@ -196,11 +175,25 @@ i:hover {
 .btn3 {
 	color: #bc1888;
 }
+
+@media (max-width: 375px) {
+	.copy {
+		position: fixed;
+		bottom: 5%;
+		top: unset;
+		font-size: 50%;
+	}
+	.btn {
+		padding: 10px;
+		font-size: 20px;
+	}
 	
+}
+
 .fog {
-	background-image: url(/img/fog2.png);
-	min-width: fill;
-	height: 300px;
-	display: flex;
-	
+	position: absolute;
+	z-index: 999;
+	translate: -50% -50%;
+	width: 100%;
+	left: 50%;
 }
