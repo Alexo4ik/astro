@@ -77,7 +77,7 @@ body {
 	text-shadow: 0 0 15px #9d822b;
 }
 .layers__title {
-	font-size: calc(var(--index) * 2.65);
+	font-size: calc(var(--index) * 2.0);
 	letter-spacing: calc(var(--index) / 2.25);
 }
 .layers__caption {
@@ -190,10 +190,45 @@ i:hover {
 	
 }
 
-.fog {
-	position: absolute;
-	z-index: 999;
-	translate: -50% -50%;
-	width: 100%;
-	left: 50%;
+.clouds {
+    position: relative;
+    width: 100%;
+	z-index: 11;
+	background: none;
+}
+
+.clouds .fog img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    filter:blur(3px);
+    animation: anim calc(5s*var(--stork)) linear infinite;
+	height: 150px;
+}
+
+@keyframes anim {
+    0%{
+        opacity: 0.2; 
+        transform: scale(1);
+    }
+    20%,80% {
+        opacity: 0.7; 
+    }
+	50%{
+		opacity: 0.8; 
+		transform: scale(2);
+    }
+	
+	30%,60%{
+		opacity: 0.7; 
+    }
+    100%{
+        opacity: 0.2; 
+        transform: scale(3);
+    }
+}
+
+.arrow {
+	font-size: 40px;
+	color:rgb(236, 30, 30);
 }
