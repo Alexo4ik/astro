@@ -108,6 +108,8 @@ body {
 	transform: var(--main-article-transform);
 	transition: var(--transition);
 	will-change: transform;
+	color: var(--text);
+	text-shadow: 0 0 15px #9d822b;
 }
 
 .main-article__header2 {
@@ -127,6 +129,8 @@ body {
 	transform: var(--main-article-transform);
 	transition: var(--transition);
 	will-change: transform;
+	color: var(--text);
+	text-shadow: 0 0 15px #9d822b;
 	
 }
 
