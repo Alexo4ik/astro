@@ -176,20 +176,6 @@ i:hover {
 	color: #bc1888;
 }
 
-@media (max-width: 375px) {
-	.copy {
-		position: fixed;
-		bottom: 5%;
-		top: unset;
-		font-size: 50%;
-	}
-	.btn {
-		padding: 10px;
-		font-size: 20px;
-	}
-	
-}
-
 .clouds {
     position: relative;
     width: 100%;
@@ -228,7 +214,159 @@ i:hover {
     }
 }
 
-.arrow {
-	font-size: 40px;
-	color:rgb(236, 30, 30);
+@media (min-width: 280px) {
+	.copy {
+		position: fixed;
+		bottom: 5%;
+		top: 60%;
+		font-size: 50%;
+	}
+	.btn {
+		padding: 10px;
+		font-size: 30px;
+	}
+	.clouds .fog img {
+		max-height: 50px;
+		bottom: -40px;
+	}
+	.main-article__paragraph2{
+		font-size: 8px;
+	}
+	.main-article__paragraph{
+		font-size: 8px;
+	}
 }
+@media (min-width: 360px) {
+	.copy {
+		position: fixed;
+		bottom: 5%;
+		top: 60%;
+		font-size: 50%;
+	}
+	.btn {
+		padding: 10px;
+		font-size: 30px;
+	}
+	.clouds .fog img {
+		max-height: 50px;
+		bottom: -40px;
+	}
+	.main-article__paragraph2{
+		font-size: 10px;
+	}
+	.main-article__paragraph{
+		font-size: 10px;
+	}
+}
+
+@media (min-width: 414px) {
+	
+	.copy {
+		position: fixed;
+		bottom: 5%;
+		top: 70%;
+		font-size: 50%;
+	}
+	.btn {
+		padding: 10px;
+		font-size: 30px;
+	}
+	.clouds .fog img {
+		max-height: 50px;
+		bottom: -40px;
+	}
+	.main-article__paragraph2{
+		font-size: 12px;
+	}
+	.main-article__paragraph{
+		font-size: 12px;
+	}
+}
+
+@media (min-width: 540px) {
+	.copy {
+		position: fixed;
+		bottom: 5%;
+		top: 70%;
+		font-size: 50%;
+	}
+	.btn {
+		padding: 10px;
+		font-size: 20px;
+	}
+	.clouds .fog img {
+		max-height: 50px;
+		bottom: -40px;
+	}
+	.main-article__paragraph2{
+		font-size: 12px;
+	}
+	.main-article__paragraph{
+		font-size: 12px;
+	}
+}
+
+@media (min-width: 768px) {
+	.copy {
+		position: fixed;
+		bottom: 5%;
+		top: 70%;
+		font-size: 50%;
+	}
+	.btn {
+		padding: 10px;
+		font-size: 40px;
+	}
+	.main-article__paragraph2{
+		font-size: 15px;
+	}
+	.main-article__paragraph{
+		font-size: 15px;
+	}
+}
+	
+@media (min-width: 912px) {
+	.copy {
+		position: fixed;
+		bottom: 5%;
+		top: 70%;
+		font-size: 50%;
+	}
+	.btn {
+		padding: 10px;
+		font-size: 50px;
+	}
+	.clouds .fog img {
+		max-height: 100px;
+		bottom: -40px;
+	}
+	.main-article__paragraph2{
+		font-size: 20px;
+	}
+	.main-article__paragraph{
+		font-size: 20px;
+	}
+	} 
+
+	@media (min-width: 1024px) {
+	.copy {
+			position: fixed;
+			bottom: 5%;
+			top: 60%;
+			font-size: 50%;
+		}
+		.btn {
+			padding: 10px;
+			font-size: 50px;
+		}
+		.clouds .fog img {
+			max-height: 100px;
+			bottom: -40px;
+		}
+		.main-article__paragraph2{
+			font-size: 24px;
+		}
+		.main-article__paragraph{
+			font-size: 24px;
+		}
+	}
