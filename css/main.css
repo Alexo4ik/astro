@@ -348,25 +348,3 @@ i:hover {
 	}
 	} 
 
-	@media (min-width: 1024px) {
-	.copy {
-			position: fixed;
-			bottom: 5%;
-			top: 60%;
-			font-size: 50%;
-		}
-		.btn {
-			padding: 10px;
-			font-size: 50px;
-		}
-		.clouds .fog img {
-			max-height: 100px;
-			bottom: -40px;
-		}
-		.main-article__paragraph2{
-			font-size: 24px;
-		}
-		.main-article__paragraph{
-			font-size: 24px;
-		}
-	}
