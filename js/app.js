@@ -7,7 +7,7 @@ ScrollSmoother.create({
 	content: '.content'
 })
 
-const t = document.querySelector(`title`), w = 'dobrastro_ksenia', e = `❤❤❤❤❤❤`;
+const t = document.querySelector(`title`), w = 'dobrastro_ksenia', e = `💫💫💫💫💫`;
 let c = 0;
 setInterval(() => {
 	c = (c < w.length) ? c + 1 : 0;
